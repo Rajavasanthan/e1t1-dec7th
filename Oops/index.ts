@@ -9,7 +9,7 @@ interface LocationData {
 }
 
 class Machine {
-     name;
+     private readonly name;
      model;
      brand;
      color;
@@ -19,9 +19,11 @@ class Machine {
 
 
 class Car extends Machine {
-
+     private speed;
+     protected a;
      constructor(){
           super();
+          this.speed = 40;
      }
 
      start() {
@@ -49,6 +51,7 @@ class Bus extends Machine {
 
 let myAudi = new Car();
 let myBus = new Bus();
+
 
 myAudi.move('RIGHT');
 myAudi.location([{
