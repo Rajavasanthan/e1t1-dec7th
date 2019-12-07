@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          // var user = {
+          //      'name' : 'Person 1',
+          //      'display' : function(){
+          //           console.log(this)
+          //      },
+          //      'display2' : () => {
+          //           console.log(this);
+          //      }
+          // }
+
+          // user.display2();
+
+
+          // let foo = (a,b,c,d) => {
+          //      console.log(a)
+          // }
+
+          // foo(1,2,3,4)
+
+          // let url = "http://localhost:3000?id=5";
+          // let [left, right] = url.split("?");
+          // console.log(right);
+
+          // let data = "The original Data";
+
+          // let result = {data};
+
+
+          // console.log('App Start 1');
+
+          // setTimeout(function(){
+          //      console.log('Execute After 0 Sec 2')
+          // },0);
+
+          // var x = 5 + 5;
+
+          // console.log(x);
+          // console.log('App End 4');
+
+
+          // function foo(a, b, cb) {
+          // var result;
+          // setTimeout(function () {
+          //      var result = 5 + 6;
+          //      return cb(result)
+          // }, 2000);
+          // }
+
+          // foo(5, 6);
+          // console.log(result);
+
+
+          // let myPromise = new Promise(function(resolve,resject){
+          //      setTimeout(function(){
+          //           resolve(true)
+          //      },3000);
+          // });
+
+          // myPromise.then(function(data){
+          //      console.log(data);
+          // });
+
+
+          async function foo() {
+               let promise = new Promise((resolve, reject) => {
+                    setTimeout(() => resolve("done!"), 3000)
+               });
+               
+               let result = await promise;
+
+               console.log("Hello")
+               console.log("Hello")
+               console.log("Hello")
+               console.log("Hello")
+               console.log("Hello")
+               console.log("Hello")
+               console.log("Hello")
+          }
+          foo();
+
+
+     </script>
+</body>
+
+</html>
